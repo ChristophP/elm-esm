@@ -49,13 +49,13 @@ elm-esm make src/Main.elm --output=myElmModule.js
 
 ### How does that work under the hood?
 
-It's just a few simple Regex transforms, designed to work under different circumstances.
+It's just a few simple Regex transforms on the compiler output, designed to work under different circumstances.
 It only operates on necessary lines of code that are related to exporting.
 Some code that isn't needed is commented out, and one line to export in ES6 style is added.
 
 ### Will this work in my browser?
 
-Probably, yes. All modern Browsers support ES6 modules now. Check out the compatibility table.
+Probably, yes. All modern Browsers support ES6 modules now. Check out the [compatibility table](https://caniuse.com/es6-module).
 
 ### How can I use this with Webpack/Parcel/Rome
 
@@ -70,5 +70,5 @@ Please open an issue if you run into problems here!
 ### What about elm-test?
 
 Don't use this for elm-test. `elm-esm` is meant for use in the browser. NodeJS
-still only has experimental support for ESM *sigh*.
+still only has [experimental support for ESM](https://nodejs.org/docs/latest-v14.x/api/esm.html) *sigh*.
 
