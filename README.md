@@ -72,3 +72,7 @@ Please open an issue if you run into problems here!
 Don't use this for elm-test. `elm-esm` is meant for use in the browser. NodeJS
 still only has [experimental support for ESM](https://nodejs.org/docs/latest-v14.x/api/esm.html) *sigh*.
 
+### Does this work for all Elm versions?
+
+It's only tested for Elm 0.19.1, but it may work with 0.19.0 too.
+Please open you run into issues here.
