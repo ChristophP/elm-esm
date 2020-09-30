@@ -32,6 +32,19 @@ import('./myElmModule.js').then((Elm) => {
 
 It's like it's 2020 already 🥳🎉
 
+## Usage
+
+`elm-esm` accepts all the options that `elm` accepts. Run `elm-esm --help` for an
+overview.
+
+```sh
+npx elm-esm make src/Main.elm --output=myElmModule.js
+
+# Or globally installed
+npm i -g elm-esm
+elm-esm make src/Main.elm --output=myElmModule.js
+```
+
 ## FAQs
 
 ### How does that work under the hood?
