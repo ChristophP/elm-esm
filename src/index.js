@@ -34,7 +34,6 @@ const makeESModule = (js) => {
     .replace(/^_Platform_export(.*?)$/m, '// $&')
     .concat('\n')
     .concat(`export const Elm = ${elmExports};\n`)
-
 }
 
 
@@ -43,4 +42,4 @@ const run = async () => {
   await postProcess();
 }
 
-run()
+run();
