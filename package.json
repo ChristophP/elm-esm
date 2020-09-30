@@ -1,11 +1,14 @@
 {
   "name": "elm-esm",
   "version": "1.0.0",
-  "description": "",
+  "description": "Turn Elm compiler output into modern ES Modules",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "bin": "src/index.js",
+  "files": [
+    "src/index.js"
+  ],
   "author": "",
   "license": "ISC",
   "devDependencies": {
