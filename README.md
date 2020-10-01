@@ -47,9 +47,9 @@ elm-esm make src/Main.elm --output=myElmModule.js
 
 `elm-esm` accepts one extra option called `--compiler=path/to/elm`. By default it looks
 for an elm compiler in the following order.
-1. In the nearest `node_modules/.bin`
-2. In your `$PATH`
-3. In whatever you pass with the `--compiler=path/to/elm` flag
+1. In whatever you pass with the `--compiler=path/to/elm` flag, if present
+2. In the nearest `node_modules/.bin`
+3. In your `$PATH`
 
 ## FAQs
 
@@ -86,4 +86,4 @@ Please open you run into issues here.
 ### What if I compile to an HTML file?
 
 Nothing happens. Having an inline script with `type=module` doesn't make sense
-with exports since I don't thin you can import it anywhere else;
+with exports since I don't think you can import it anywhere else.
