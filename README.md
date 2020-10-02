@@ -46,7 +46,7 @@ elm-esm make src/Main.elm --output=myElmModule.js
 ```
 
 `elm-esm` accepts one extra option called `--compiler=path/to/elm`. By default it looks
-for an elm compiler in the following order.
+for an Elm compiler in the following order.
 1. In whatever you pass with the `--compiler=path/to/elm` flag, if present
 2. In the nearest `node_modules/.bin`
 3. In your `$PATH`
@@ -65,8 +65,8 @@ Probably, yes. All modern Browsers support ES6 modules now. Check out the [compa
 
 ### How can I use this with Webpack/Parcel/Rome
 
-I haven't 100% figured that out, but it should be pretty easy. `elm-esm` is designed to be a wrapper around `elm`.
-Most bundler plugins for elm allow passing an option with a path to the elm executable.
+I haven't 100% figured that out, but it should be pretty easy. `elm-esm` is designed to be a wrapper around `Elm`.
+Most bundler plugins for Elm allow passing an option with a path to the Elm executable.
 Just pass the path to `elm-esm` instead.
 On the other hand why bundle when you can load the module in the browser directly?
 If you're looking to bundle your app, then you probably don't need this `elm-esm`.
@@ -84,7 +84,7 @@ But if you're looking to launch a `Platform.worker` Elm program in
 ### Does this work for all Elm versions?
 
 It's only tested for Elm 0.19.1, but it may work with 0.19.0 too.
-Please open you run into issues here.
+Please open an issue if you run into problems here!
 
 ### What if I compile to an HTML file?
 
