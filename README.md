@@ -20,7 +20,7 @@ It's even possible to use your favorite ES6 features like `dynamic-import` or `m
 
 ```javascript
 // this is great for lazy loading an Elm app
-import('./myElmModule.js').then((Elm) => {
+import('./myElmModule.js').then(({ Elm }) => {
   Elm.Main.init({ node: document.body })
 });
 ```
@@ -65,7 +65,7 @@ Probably, yes. All modern Browsers support ES6 modules now. Check out the [compa
 
 ### How can I use this with Webpack/Parcel/Rome
 
-I haven't 100% figured that out, but it should be pretty easy. `elm-esm` is designed to be a wrapper around `Elm`.
+I haven't 100% figured that out, but it should be pretty easy. `elm-esm` is designed to be a wrapper around `elm`.
 Most bundler plugins for Elm allow passing an option with a path to the Elm executable.
 Just pass the path to `elm-esm` instead.
 On the other hand why bundle when you can load the module in the browser directly?
