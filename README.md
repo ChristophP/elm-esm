@@ -32,7 +32,7 @@ import('./myElmModule.js').then(({ Elm }) => {
 
 It's like it's 2020 already 🥳🎉
 
-## Usage
+## CLI Usage
 
 `elm-esm` accepts all the options that `elm` accepts. Run `elm-esm --help` for an
 overview.
@@ -50,6 +50,26 @@ for an Elm compiler in the following order.
 1. In whatever you pass with the `--compiler=path/to/elm` flag, if present
 2. In the nearest `node_modules/.bin`
 3. In your `$PATH`
+
+## NodeJS Usage
+
+Plugin authors or other tooling may want to use the transform as a standalone
+function. Here's how:
+
+```sh
+# install the package to your dependencies
+npm i -D elm-esm
+```
+
+The module exports a named function called `toESModule`. It takes one argument,
+which is the compiled Elm code as a string. It returns the ESModule transformed code
+as a string.
+
+```javascript
+const { toESModule } = require('elm-esm');
+
+const transformedElmOutputAsESModule = toESModule(compiledElmOutput);
+```
 
 ## FAQs
 
