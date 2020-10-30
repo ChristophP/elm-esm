@@ -1,6 +1,6 @@
 {
   "name": "elm-esm",
-  "version": "1.0.3",
+  "version": "1.1.0",
   "description": "Turn Elm compiler output into modern ES Modules",
   "repository": "https://github.com/ChristophP/elm-esm",
   "scripts": {
